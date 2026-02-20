@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Zone - Ubicación</title>
+    <link rel="stylesheet" href="../css/ubicación.css">
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1><img src="../img/LOGO.jfif" alt="Logo-PixelZone"> Pixel Zone</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#salas">Salas</a></li>
+                    <li><a href="../index.html#servicios">Servicios</a></li>
+                    <li><a href="./Contactos.html">Contacto</a></li>
+                    <li><a href="./Ubicación.html">Ubicación</a></li>
+                    <li><a href="./Reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+        <div id="google_translate_element" class="google"></div>
+    </header>
+
+    <main>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Estamos en el corazón de <b>Barcelona</b>. ¡Ven a visitarnos!</p>
+            
+            <div class="contenedor-mapa">
+                <iframe 
+                    class="mapa-iframe"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=2.1278%2C41.3750%2C2.2011%2C41.4170&layer=mapnik&marker=41.3851%2C2.1734">
+                </iframe>
+            </div>
+
+            <a href="#" class="button-maps" onclick="window.cordova.InAppBrowser.open('https://www.google.com/maps/place/La+Sagrera-Meridiana/@41.422014,2.1845351,17z/data=!4m6!3m5!1s0x12a4bcd4ffa5b173:0x9a1a90d8ce5277f5!8m2!3d41.42201!4d2.18711!16s%2Fm%2F02rthzj?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D', '_system', 'location=yes'); return false;">
+               📍 VER EN GOOGLE MAPS (GPS)
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Pixel Zone. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="cordova.js"></script>
+</body>
+</html>

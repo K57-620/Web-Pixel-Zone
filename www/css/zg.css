@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #000000ba;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    position: relative;
+    text-align: center;
+    background-color: #141414c8;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    gap: 20px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 10%;
+}
+.google {
+    
+    padding: 10px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+
+}
+
+nav {
+    display: flex;
+    align-self: end;
+ }
+
+nav ul {
+    font-size:larger;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+   text-shadow: 0 0 15px ;
+   color: #f289ee;
+}
+
+/* SECCIONES */
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background: #242024ae;;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #282626;
+}
+
+section h2 {
+    background-color: #141414c8;
+    align-self: center;
+    box-shadow: 0 0 15px #e306be;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* TARJETAS */
+.card-container {
+    display: flex;
+    grid-template-columns: repeat(6,1fr);
+    gap: 25px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 15px;
+    text-decoration: none;
+    background: #141414c8;;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgb(131, 3, 138);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    flex: 1;
+
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(255, 8, 255, 0.981);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+
+.card p {
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Tarjetas componentes */
+
+.pc-image{
+    flex: 1;
+}
+
+.pc-image img{
+    width: 100%;
+
+}
+
+.left-cards {
+    flex: 0.5;
+}
+
+.right-cards {
+    flex: 0.5;
+}
+
+.card.components {
+    display: flex;
+    gap: 10px;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.card.components img {
+    width: 50%;
+}
+
+
+.left-cards .card.components:hover {
+    transform: translateX(-15px);
+    transition: transform 0.5s ease
+}
+.right-cards .card.components:hover {
+    transform: translateX(15px);
+    transition: transform 0.5s ease
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#000000;;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

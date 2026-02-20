@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Zone - Reservas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><img src="../img/LOGO.jfif" alt="Logo-PixelZone"> Pixel Zone - Reservas</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#salas">Salas</a></li>
+                    <li><a href="../index.html#servicios">Servicios</a></li>
+                    <li><a href="./Contactos.html">Contacto</a></li>
+                    <li><a href="./Ubicación.html">Ubicación</a></li>
+                    <li><a href="./Reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+        <div id="google_translate_element" class="google"></div>
+    </header>
+
+    <main class="contenedor-reservas">
+
+        <section class="seccion-formulario">
+            <h2>Reserva tu Puesto Gaming</h2>
+            <p>Asegura tu equipo de alto rendimiento y domina la partida.</p>
+
+            <form action="#" method="POST" class="form-pixel">
+                <div class="campo">
+                    <label for="nombre">Nickname / Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Destroyer99" required>
+                </div>
+
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                </div>
+
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="sala">Selecciona Sala:</label>
+                        <select id="sala" name="sala" required>
+                            <option value="sala-estandar">Sala Estándar (3,00€/h)</option>
+                            <option value="sala-competitiva">Sala Competitiva (5,00€/h)</option>
+                            <option value="sala-vr">Sala VR (8,00€ / 30min)</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="tiempo">Plan de Tiempo:</label>
+                        <select id="tiempo" name="tiempo" required>
+                            <option value="1h">1 Hora Suelta</option>
+                            <option value="bono-gamer">Bono Gamer (5 Horas - 12€)</option>
+                            <option value="pase-nocturno">Pase Nocturno (20€)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="boton-reserva">CONFIRMAR RESERVA</button>
+            </form>
+        </section>
+
+        <aside class="sidebar-precios">
+            <div class="tarjeta-info">
+                <h3>Tarifas Pixel Zone</h3>
+                <ul>
+                    <li>Sala Estándar: <span>3,00€ / h</span></li>
+                    <li>Sala Competitiva: <span>5,00€ / h</span></li>
+                    <li>Sala VR: <span>8,00€ / 30m</span></li>
+                    <li class="destacado">Bono Gamer (5h): <span>12,00€</span></li>
+                    <li class="destacado">Pase Nocturno: <span>20,00€</span></li>
+                </ul>
+            </div>
+
+            <div class="tarjeta-info horario">
+                <h3>Horario</h3>
+                <p>Abierto todos los días</p>
+                <p class="horario-destacado">10:00 AM - 02:00 AM</p>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; Pixel Zone. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
