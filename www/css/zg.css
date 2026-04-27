@@ -212,3 +212,10 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+footer a {
+    color: #9636b4;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 15px;
+}
